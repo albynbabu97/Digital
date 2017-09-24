@@ -5,7 +5,7 @@ void main()
 	char put[200];
 	int input=0,output=0,and=0,or=0,not=0,nand=0,nor=0,xor=0;
 	FILE *fp1,*fp2;
-	fp1=fopen("Bench.bench","r");
+	fp1=fopen("c5315.bench","r");
 	fp2=fopen("Out.txt","w");
 	while(!feof(fp1))
 	{
@@ -20,12 +20,12 @@ void main()
 					output++;
 				if(strstr(put,"and")!=NULL)
 				{
-					if(strcmp(put,"nand")==0)
+					if(strcmp(put,"nand")!=0)
 						and++;
 				}
 				if(strstr(put,"or")!=NULL)
 				{
-					if((strcmp(put,"xor")==0)&&(strcmp(put,"nor")==0))
+					if((strcmp(put,"xor")!=0)&&(strcmp(put,"nor")!=0))
 						or++;
 				}
 				if(strstr(put,"not")!=NULL)

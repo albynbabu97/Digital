@@ -30,4 +30,3 @@ G16gat = nand(G2gat, G11gat)
 G19gat = nand(G11gat, G7gat)
 G22gat = nand(G10gat, G16gat)
 G23gat = nand(G16gat, G19gat)
-

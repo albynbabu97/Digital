@@ -1,3 +1,21 @@
+#   combinational logic example "c5315"
+# -------------------------------------------------------------
+# 
+# 
+#   total number of lines in the netlist ..............  5315
+#   simplistically reduced equivalent fault set size =   5350
+#         lines from primary input  gates .......   178
+#         lines from primary output gates .......   123
+#         lines from interior gate outputs ......  2184
+#         lines from **   806 ** fanout stems ...  2830
+# 
+#         avg_fanin  =  1.90,     max_fanin  =  9
+#         avg_fanout =  3.51,     max_fanout = 15
+# 
+# 
+# 
+# 
+# 
 INPUT(G1)
 INPUT(G4)
 INPUT(G11)
@@ -2607,13 +2625,3 @@ G657 = and(G1662, G1606)
 G689 = and(G2333, G2279)
 G658 = not(G657)
 G690 = not(G689)
-
-Total No. of inputs : 178
-Total No. of outputs : 123
-
-Total No. of AND gates : 1172
-Total No. of OR gates : 241
-Total No. of NOT gates : 581
-Total No. of NAND gates : 454
-Total No. of NOR gates : 27
-Total No. of XOR gates : 0
